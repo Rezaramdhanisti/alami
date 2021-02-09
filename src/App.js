@@ -49,11 +49,6 @@ function DashboardStack() {
         component={PostList}
         options={{title: 'Home', headerLeft: null}}
       />
-      <Stack.Screen
-        name="detailPost"
-        component={DetailPost}
-        options={{title: 'Detail Page'}}
-      />
     </Stack.Navigator>
   );
 }
@@ -94,6 +89,11 @@ function App() {
             headerShown: false,
             gestureEnabled: false,
           }}
+        />
+        <Stack.Screen
+          name="detailPost"
+          component={DetailPost}
+          options={{title: 'Detail Page'}}
         />
       </Stack.Navigator>
     </NavigationContainer>
